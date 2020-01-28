@@ -3,6 +3,10 @@ Aplicación de notas programado en Ionic para el curso 2ºDAM.
 
 En esta aplicación se puede crear, listar y compartir notas, crear, editar, eliminar y listar categorías.
 
+## Tecnologías utilizadas.
+1. Ionic
+2. Firebase
+
 ## Arranque de la aplicación.
 Esta app utiliza una base de datos en firebase. Para utilizarlo, deberás crear un proyecto en la consola de Firebase. 
 
