@@ -1,0 +1,7 @@
+{
+  "name": "keepit",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

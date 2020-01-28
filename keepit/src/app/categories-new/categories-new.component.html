@@ -1,0 +1,20 @@
+<ion-header translucent>
+    <ion-toolbar>
+      <ion-title>Nueva categoría</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content fullscreen>
+    <form>
+      <ion-list lines="full" class="ion-no-margin ion-no-padding">
+        <ion-item>
+          <ion-label position="stacked">Título <ion-text color="danger">*</ion-text></ion-label>
+          <ion-input required type="text" [(ngModel)]="category.title" name="title"></ion-input>
+        </ion-item>
+      </ion-list>
+  
+      <div class="ion-padding">
+        <ion-button expand="block" type="submit" class="ion-no-margin" (click)="save()">Guardar</ion-button>
+      </div>
+    </form>
+  </ion-content>

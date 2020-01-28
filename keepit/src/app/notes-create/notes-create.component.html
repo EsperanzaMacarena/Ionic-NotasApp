@@ -1,0 +1,32 @@
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-title>Nueva nota</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <form>
+    <ion-list lines="full" class="ion-no-margin ion-no-padding">
+      <ion-item>
+        <ion-label position="stacked">Categoría <ion-text color="danger">*</ion-text></ion-label>
+        <ion-select placeholder="Selecciona una" [(ngModel)]="nota.category" name="category">
+          <ion-select-option *ngFor="let category of categories" value="{{category.id}}">{{category.data.title}}</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Título <ion-text color="danger">*</ion-text></ion-label>
+        <ion-input required type="text" [(ngModel)]="nota.title" name="title"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Nota</ion-label>
+        <ion-textarea [(ngModel)]="nota.content" name="content"></ion-textarea>
+      </ion-item>
+    </ion-list>
+
+    <div class="ion-padding">
+      <ion-button expand="block" type="submit" class="ion-no-margin" (click)="save()">Guardar</ion-button>
+    </div>
+  </form>
+</ion-content>
